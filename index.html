@@ -1,12 +1,142 @@
 <!DOCTYPE html>
-<html>
-    <body>
-        <!--website about myself, paragraph about me, ordered list (3 favorite hobbies), unordered list with 3 youtube videos, table(anything), comment to an htlm code, image(optional)customize code, ingore css-->
-    <p style="background-color: red; font-family: verdana;">This is a paragraph.</p>
-        <a href="https://youtu.be/klvJwXhlFS4">video</a>
+<html lang="en">
+    <head>
+        <title> Assignment </title>
+    </head>
+    <body style="background-color:lightgray;font-family: Arial, Helvetica, sans-serif;">
+        <center>
+            <h1 style="font-size: 20px; color: black;">About Me </h1>
+            <!--paragraph-->
+        <pre style="font-family:Arial, Helvetica, sans-serif; color:black;"> 
+            My name is Jason. I am 15 years old and I go to Bronx Science,
+         a specialized high school. My favorite subject is chemisty because 
+         it is exhilarating to see different reactions and learning about the 
+         properties behind it. My favorite foods are ice cream and pizza. 
+         </pre>  
+    <br>
+             <!--ordered list-->
+             <h1 style="font-size: 20px;">
+                My Favorite Hobbies
+             </h1>
+        <ol style="display: table; margin: 0 auto;" type=1>
+            <li style="color:firebrick;">Reading</li>
+            <li style="color:firebrick;">Playing Chess</li>
+            <li style="color:firebrick;">Watching Youtube</li>
+        </ol>
+    <br>
+            <!--unordered list-->
+            <h1 style="font-size: 20px;">
+                My Favorite Youtube Videos
+            </h1>
+        <ul style="display: table; margin: 0 auto;">
+            <li> <a href="https://www.youtube.com/watch?v=37Kn-kIsVu8&ab_channel=NileRed"> "Turning old jewelry into pure gold bars" </a> </li>
+            <li> <a href="https://www.youtube.com/watch?v=gm0b_ijaYMQ&ab_channel=NASA"> "Watch NASA's Perseverance Rover Land on Mars!" </a> </li>
+            <li> <a href="https://www.youtube.com/watch?v=A73HQwEct-o&ab_channel=MikeBoyd"> "How Eliud Kipchoge Ran a Sub 2 Hour Marathon" </a> </li>
+        </ul>
+    <br>
+            <!--table-->
+            <style>
+                table, th, td {
+                    border: 1px solid black;
+                    border-collapse: collapse;
+                    text-align: center;
+                    background-color: lightblue;
+                }
+            </style>
+                <img style="width:300px;" src="images/radish.png" alt="Picture of Radishes">
+    <br>
+            <h1 style="font-size: 20px;">
+                 An Experiment We Did in Science Research
+            </h1>
+                <table>
+                     <tr>
+                        <th colspan="2"> Height of 3 Radish Grown in Close Proximity </th>
+                     </tr>
+                     <tr>
+                        <th> Sample # </th>
+                        <th> Total Height (cm) </th>
+                     </tr>
+                     <tr>
+                        <td>Radish 1</td>
+                        <td>11.0</td>
+                     </tr>
+                     <tr>
+                        <td>Radish 2</td>
+                        <td>8.0</td>
+                     </tr>
+                     <tr>
+                        <td>Radish 3</td>
+                        <td>9.9</td>
+                     </tr>
+                </table>
+    <br>
+                <h1 style="font-size: 20px;">
+                    A Form
+                 </h1>
+            <form>
+                    <!--text-->
+                <label for="name"> Full Name: </label><br>
+                <input type="text" id="name" name="name"><br>
+                <label for="email"> Email: </label><br>
+                <input type="text" id="email" name="email"><br>
+                <label for="pnumber"> Phone Number: </label><br>
+                <input type="text" id="pnumber" name="pnumber"><br>
+                    <!--radio-->
+                <p> How old are you? </p>
+                <input type="radio" id="age1" name="age1">
+                <label for="age1"> younger than 10 years old </label><br>
+                <input type="radio" id="age2" name="age2">
+                <label for="age2"> 11-20 years old</label><br>
+                <input type="radio" id="age3" name="age3">
+                <label for="age3"> 21-30 years old</label><br>
+                <input type="radio" id="age4" name="age4">
+                <label for="age4"> older than 31 years old </label><br>
+                    <!--checkboxes-->
+                <p>What are some of your favorite colors</p>
+                <input type="checkbox" id="color1" name="color1">
+                <label for="color1"> Red </label><br>
+                <input type="checkbox" id="color2" name="color2">
+                <label for="color1"> Orange </label><br>
+                <input type="checkbox" id="color3" name="color3">
+                <label for="color3"> Yellow </label><br>
+                <input type="checkbox" id="color4" name="color4">
+                <label for="color4"> Green </label><br>
+                <input type="checkbox" id="color5" name="color5">
+                <label for="color5"> Blue </label><br>
+                <input type="checkbox" id="color6" name="color6">
+                <label for="color6"> Purple </label><br>
+                <input type="checkbox" id="color7" name="color7">
+                <label for="color7"> Pink </label><br>
+                <input type="checkbox" id="color8" name="color8">
+                <label for="color8"> Brown </label><br>
+                <input type="checkbox" id="color9" name="color9">
+                <label for="color9"> Black </label><br>
+                <input type="checkbox" id="color10" name="color10">
+                <label for="color10"> White </label><br><br>
+                    <!--datalist-->
+                <p> What is your favorite animal on this list?</p> <br>
+                <input list="animals" name="animal" id="animal"><br><br>
+                    <datalist id="animals">
+                        <option value="Cat">
+                        <option value="Dog">
+                        <option value="Chicken">
+                        <option value="Cow">
+                        <option value="Fox">
+                    </datalist>
+                <p> What is your favorite fruites on this list? </p> <br>
+                <input list="fruits" name="fruit" id="fruit"><br><br>
+                    <datalist id="fruits">
+                        <option value="apple">
+                        <option value="banana">
+                        <option value="pear">
+                        <option value="peach">
+                        <option value="strawberry">
+                        <option value="orange">
+                        <option value="watermelon">
+                    </datalist>
+                <input type="reset" value="Reset">
+                <input type="submit" value="Submit">
+            </form>
+        </center>
     </body>
 </html>
-
-<html>
-    <h1 style="font-size: 50px;">about us
-    <p style="color:blue;"> my name is jason. i am 15 years old yes yes i ove coding veryy mucho. my hobbies are watching youtube and learning about useless thingts(also on youtube). my favorite foods are cheddar cheese and pizza. my name is joyce im 16 years old my hobbies are 
