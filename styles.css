@@ -1,29 +1,113 @@
 body {
-    background-color:lightgray;
-    font-family: Arial, Helvetica, sans-serif;
-}  
-  h1 {
-    font-size: 20px;
-    color: black;
-  }  
-  pre {
-    font-family:Arial, Helvetica, sans-serif;
-    color: black;
-  }  
-  ol {
+    text-align: center;
+    background-color: #222227; 
+    zoom: 55%;
+    font-family: serif!important;
+    color:white;
+}
+#title{
+    font-size: 75px;
+}
+/*time*/
+#timeContainer {
+    position:relative;
+    left:100px;
+    top: 35px;
+    color:white;
+    font-size: x-large;
+    border-radius: 25px;
+    background: darkslategray;
+    padding: 15px;
+    width: 1000px;
+    
+}
+#day{
+    position:relative;
+    bottom: 20px;
+    font-size: xx-large !important;
+    border-radius: 10px 10px 1px 1px!important;
+}
+.completeTime {
+  font-size: x-large;
+  border-radius: 10px;
+  background: gray;
+  padding:20px;
+}
+/*todo*/
+#toDoContainer {
+    position:relative;
+    left:100px;
+    top:150px;
+    color:white;
+    font-size: x-large;
+    border-radius: 25px;
+    background: darkslategray;
+    padding: 20px;
+    width: 1000px;
+}
+ul {
     display: table;
     margin: 0 auto;
-    }  
-  ul {
-    display: table;
-    margin: 0 auto;
-  }   
-  table, th, td {
-                      border: 1px solid black;
-                      border-collapse: collapse;
-                      text-align: center;
-                      background-color: lightblue;
-                 }
-   .li1 {
-    color:firebrick;
-  }
+    list-style-type:none
+}
+.toDoButton {
+    height:50px;
+    width: 100px;
+    border-radius: 10px;
+    font-size: x-large;
+}
+#textToDo {
+    height:50px;
+    width: 300px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: x-large;
+}
+#toDoList {
+    position:relative;
+    right: 17px;
+    outline: 15px #222227 solid;
+    border-radius: 10px;
+}
+li {
+    font-size: xx-large;
+    background: gray;
+    padding:10px;
+    width: 550px
+}
+li:nth-child(odd) {
+  background-color: #909090;
+}
+/*calendar*/
+#calendarContainer{
+    position: relative;
+    bottom: 1000px;
+    right:100px;
+    float:right;
+}
+.calendarDates{
+    margin: auto;
+    border-radius: 25px 25px 0px 0px;
+    background: darkslategray;
+    padding: 5px;
+    width: 1050px;
+    height:180px;
+    font-size: xx-large;
+}
+.calendar {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1060px;
+    border-collapse: collapse;
+    border: 5px solid darkgray;
+}
+tr, td {
+    height: 140px;
+    font-size: x-large;
+}
+.nextMonth,.lastMonth{
+    color:gray;
+}
+#currentDay{
+    background-color: darkslategray ;
+}
