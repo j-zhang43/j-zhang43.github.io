@@ -6,10 +6,13 @@
 // nav always on, (sticky) and remove background
 
 // TODO 
-// only work when
+// only work when visible
 function swipe_in_header() {
-
+  const span_swipe = document.querySelector(".head-swap");
+  alert(span_swipe.innerHTML);
 }
+
+swipe_in_header();
 
 function isInView(element){
   const rect = element.getBoundingClientRect();
